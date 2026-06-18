@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>BMI Surgical Institute · Atlanta, GA — Bariatric &amp; Weight-Loss Surgery</title>
+  <meta name="description" content="BMI Surgical Institute in Atlanta, GA. Dr. Amir Aryaie, MD, FACS, FASMBS — advanced bariatric, reflux and minimally invasive surgery. Gastric sleeve, bypass, hernia repair and more." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            display: ['"Plus Jakarta Sans"', 'sans-serif'],
+            sans: ['Inter', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              50: '#eff8ff', 100: '#dbeefe', 200: '#bfe2fe', 300: '#93d0fd',
+              400: '#60b5fa', 500: '#3b97f6', 600: '#2479eb', 700: '#1c63d8',
+              800: '#1d51af', 900: '#1d478a', 950: '#162c54',
+            },
+            teal: { 400: '#2dd4bf', 500: '#14b8a6', 600: '#0d9488' },
+          },
+        },
+      },
+    };
+  </script>
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    h1,h2,h3,h4,.font-display { font-family: 'Plus Jakarta Sans', sans-serif; }
+    .reveal { opacity: 0; transform: translateY(24px); transition: all .7s cubic-bezier(.16,1,.3,1); }
+    .reveal.in { opacity: 1; transform: none; }
+  </style>
+</head>
+<body class="bg-white text-slate-700 antialiased">
+
+  <!-- ===== TOP BAR ===== -->
+  <div class="hidden md:block bg-brand-950 text-brand-100 text-sm">
+    <div class="max-w-7xl mx-auto px-6 py-2 flex justify-between items-center">
+      <p class="flex items-center gap-2">
+        <svg class="w-4 h-4 text-teal-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a2 2 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+        2303 Cumberland Parkway SE, Suite 2, Atlanta, GA 30339
+      </p>
+      <p class="flex items-center gap-6">
+        <span class="flex items-center gap-2"><svg class="w-4 h-4 text-teal-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>Mon–Fri 8:00 AM – 5:00 PM</span>
+        <span class="text-teal-300 font-semibold">Now accepting new patients</span>
+      </p>
+    </div>
+  </div>
+
+  <!-- ===== NAV ===== -->
+  <header id="nav" class="sticky top-0 z-50 bg-white/90 backdrop-blur border-b border-slate-100 transition-shadow">
+    <nav class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+      <a href="#home" class="flex items-center gap-3">
+        <span class="w-11 h-11 rounded-2xl bg-gradient-to-br from-brand-500 to-teal-500 flex items-center justify-center text-white shadow-lg shadow-brand-500/30">
+          <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C9 2 7.5 3 6 3S3 2.2 2.4 3.5C1.6 5.2 2.3 8.6 3 12c.6 3 .9 8 2.4 8 1.2 0 1.3-3 1.9-4.6.4-1.1 1-1.9 1.7-1.9h2c.7 0 1.3.8 1.7 1.9C16 17 16.1 20 17.3 20c1.5 0 1.8-5 2.4-8 .7-3.4 1.4-6.8.6-8.5C19.7 2.2 19 3 18 3s-3-1-6-1z"/></svg>
+        </span>
+        <span class="leading-tight">
+          <span class="block font-display font-extrabold text-slate-900 text-lg">Dr. Amir Aryaie, MD, FACS</span>
+          <span class="block text-xs text-slate-400 tracking-wide">BMI Surgical Institute · Atlanta, GA</span>
+        </span>
+      </a>
+      <div class="hidden lg:flex items-center gap-8 text-sm font-medium text-slate-600">
+        <a href="#services" class="hover:text-brand-600 transition">Services</a>
+        <a href="#about" class="hover:text-brand-600 transition">About</a>
+        <a href="#reviews" class="hover:text-brand-600 transition">Reviews</a>
+        <a href="#booking" class="hover:text-brand-600 transition">Book Online</a>
+        <a href="#contact" class="hover:text-brand-600 transition">Contact</a>
+      </div>
+      <div class="flex items-center gap-3">
+        <a href="tel:+16786260909" class="hidden sm:flex items-center gap-2 text-brand-700 font-semibold text-sm">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.95.68l1.5 4.5a1 1 0 01-.5 1.2l-2.26 1.13a11 11 0 005.5 5.5l1.13-2.26a1 1 0 011.2-.5l4.5 1.5a1 1 0 01.68.95V19a2 2 0 01-2 2h-1C9.7 21 3 14.3 3 6V5z"/></svg>
+          (678) 626-0909
+        </a>
+        <a href="#booking" class="bg-brand-600 hover:bg-brand-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full shadow-lg shadow-brand-600/25 transition">Book Now</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section id="home" class="relative overflow-hidden bg-gradient-to-b from-brand-50 to-white">
+    <div class="absolute -top-24 -right-24 w-96 h-96 bg-teal-200/40 rounded-full blur-3xl"></div>
+    <div class="absolute top-40 -left-24 w-80 h-80 bg-brand-200/40 rounded-full blur-3xl"></div>
+    <div class="max-w-7xl mx-auto px-6 py-16 lg:py-24 grid lg:grid-cols-2 gap-12 items-center relative">
+      <div class="reveal">
+        <span class="inline-flex items-center gap-2 bg-white text-brand-700 text-sm font-semibold px-4 py-1.5 rounded-full shadow-sm border border-brand-100 mb-6">
+          <span class="w-2 h-2 rounded-full bg-teal-500 animate-pulse"></span> Atlanta's trusted weight-loss surgery team
+        </span>
+        <h1 class="font-display font-extrabold text-4xl sm:text-5xl lg:text-6xl text-slate-900 leading-[1.05]">
+          A healthier you, <span class="text-brand-600">expertly</span> cared for.
+        </h1>
+        <p class="mt-6 text-lg text-slate-500 max-w-lg">
+          Advanced bariatric, reflux and minimally invasive surgery from Dr. Amir Aryaie — compassionate, expert care from your first consultation through recovery, right here in Atlanta.
+        </p>
+        <div class="mt-8 flex flex-wrap gap-4">
+          <a href="#booking" class="bg-brand-600 hover:bg-brand-700 text-white font-semibold px-7 py-3.5 rounded-full shadow-lg shadow-brand-600/30 transition flex items-center gap-2">
+            Book a consultation
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
+          </a>
+          <a href="tel:+16786260909" class="bg-white hover:bg-slate-50 text-slate-800 font-semibold px-7 py-3.5 rounded-full border border-slate-200 shadow-sm transition flex items-center gap-2">
+            <svg class="w-5 h-5 text-brand-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.95.68l1.5 4.5a1 1 0 01-.5 1.2l-2.26 1.13a11 11 0 005.5 5.5l1.13-2.26a1 1 0 011.2-.5l4.5 1.5a1 1 0 01.68.95V19a2 2 0 01-2 2h-1C9.7 21 3 14.3 3 6V5z"/></svg>
+            (678) 626-0909
+          </a>
+        </div>
+        <div class="mt-10 flex items-center gap-6">
+          <div class="flex -space-x-3">
+            <img onerror="imgFallback(this)" class="w-10 h-10 rounded-full border-2 border-white object-cover" src="images/patient-1.jpg" alt="" />
+            <img onerror="imgFallback(this)" class="w-10 h-10 rounded-full border-2 border-white object-cover" src="images/patient-2.jpg" alt="" />
+            <img onerror="imgFallback(this)" class="w-10 h-10 rounded-full border-2 border-white object-cover" src="images/patient-3.jpg" alt="" />
+          </div>
+          <div>
+            <div class="flex text-amber-400">★★★★★</div>
+            <p class="text-sm text-slate-500"><span class="font-semibold text-slate-700">Trusted across Atlanta</span> · 339+ five-star reviews</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="reveal relative">
+        <div class="relative rounded-[2rem] overflow-hidden shadow-2xl shadow-brand-900/20">
+          <img onerror="imgFallback(this)" class="w-full h-[460px] object-cover" src="images/dr-aryaie.jpg" alt="Dr. Amir Aryaie, MD, FACS" />
+        </div>
+        <div class="absolute -bottom-6 -left-6 bg-white rounded-2xl shadow-xl p-5 flex items-center gap-4 max-w-xs">
+          <span class="w-12 h-12 rounded-xl bg-teal-100 text-teal-600 flex items-center justify-center">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          </span>
+          <div>
+            <p class="font-display font-bold text-slate-900">All insurance accepted</p>
+            <p class="text-sm text-slate-500">& always taking new patients</p>
+          </div>
+        </div>
+        <div class="absolute -top-5 right-6 bg-white rounded-2xl shadow-xl px-5 py-3">
+          <p class="font-display font-extrabold text-2xl text-brand-600">16+</p>
+          <p class="text-xs text-slate-500 -mt-1">years of experience</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TRUST STRIP ===== -->
+  <section class="border-y border-slate-100 bg-white">
+    <div class="max-w-7xl mx-auto px-6 py-8 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+      <div><p class="font-display font-extrabold text-3xl text-slate-900">16+</p><p class="text-sm text-slate-500">Years of experience</p></div>
+      <div><p class="font-display font-extrabold text-3xl text-slate-900">5.0★</p><p class="text-sm text-slate-500">Patient rating</p></div>
+      <div><p class="font-display font-extrabold text-3xl text-slate-900">1000s</p><p class="text-sm text-slate-500">Surgeries performed</p></div>
+      <div><p class="font-display font-extrabold text-3xl text-slate-900">3</p><p class="text-sm text-slate-500">Atlanta locations</p></div>
+    </div>
+  </section>
+
+  <!-- ===== SERVICES ===== -->
+  <section id="services" class="py-20 lg:py-28 bg-slate-50/60">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="max-w-2xl mx-auto text-center reveal">
+        <span class="text-brand-600 font-semibold tracking-wide uppercase text-sm">What we do</span>
+        <h2 class="font-display font-extrabold text-3xl sm:text-4xl text-slate-900 mt-3">Comprehensive surgical care</h2>
+        <p class="mt-4 text-slate-500">From weight-loss surgery to reflux treatment and general surgery, advanced procedures are handled right here in Atlanta.</p>
+      </div>
+
+      <div class="mt-14 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- card -->
+        <div class="reveal group bg-white rounded-2xl p-7 border border-slate-100 hover:border-brand-200 hover:shadow-xl hover:shadow-brand-900/5 transition">
+          <span class="w-14 h-14 rounded-2xl bg-brand-50 text-brand-600 flex items-center justify-center mb-5 group-hover:bg-brand-600 group-hover:text-white transition">
+            <svg class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 2C9 2 7.5 3 6 3S3 2.2 2.4 3.5C1.6 5.2 2.3 8.6 3 12c.6 3 .9 8 2.4 8 1.2 0 1.3-3 1.9-4.6.4-1.1 1-1.9 1.7-1.9h2c.7 0 1.3.8 1.7 1.9C16 17 16.1 20 17.3 20c1.5 0 1.8-5 2.4-8 .7-3.4 1.4-6.8.6-8.5"/></svg>
+          </span>
+          <h3 class="font-display font-bold text-xl text-slate-900">Weight-Loss Surgery</h3>
+          <p class="mt-2 text-slate-500 text-sm">Gastric sleeve, bypass, mini bypass and duodenal switch — advanced, minimally invasive options.</p>
+        </div>
+        <div class="reveal group bg-white rounded-2xl p-7 border border-slate-100 hover:border-brand-200 hover:shadow-xl hover:shadow-brand-900/5 transition">
+          <span class="w-14 h-14 rounded-2xl bg-teal-50 text-teal-600 flex items-center justify-center mb-5 group-hover:bg-teal-500 group-hover:text-white transition">
+            <svg class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 3l1.5 3L10 7l-2.5 2 .6 3.5L5 11 1.9 12.5 2.5 9 0 7l3.5-1L5 3z" transform="translate(3 2)"/><path stroke-linecap="round" stroke-linejoin="round" d="M12 14l1 2 2 .3-1.4 1.4.3 2-1.9-1-1.9 1 .3-2L9 16.3 11 16l1-2z"/></svg>
+          </span>
+          <h3 class="font-display font-bold text-xl text-slate-900">Reflux &amp; GERD</h3>
+          <p class="mt-2 text-slate-500 text-sm">LINX, TIF, hiatal hernia repair and Stretta to put an end to chronic acid reflux.</p>
+        </div>
+        <div class="reveal group bg-white rounded-2xl p-7 border border-slate-100 hover:border-brand-200 hover:shadow-xl hover:shadow-brand-900/5 transition">
+          <span class="w-14 h-14 rounded-2xl bg-brand-50 text-brand-600 flex items-center justify-center mb-5 group-hover:bg-brand-600 group-hover:text-white transition">
+            <svg class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v18M8 7c0-2 1.8-3 4-3M16 7c0-2-1.8-3-4-3M9 21l1-5h4l1 5"/></svg>
+          </span>
+          <h3 class="font-display font-bold text-xl text-slate-900">Endoscopic Procedures</h3>
+          <p class="mt-2 text-slate-500 text-sm">Gastric balloon, endoscopic sleeve and diagnostic endoscopy — incisionless options.</p>
+        </div>
+        <div class="reveal group bg-white rounded-2xl p-7 border border-slate-100 hover:border-brand-200 hover:shadow-xl hover:shadow-brand-900/5 transition">
+          <span class="w-14 h-14 rounded-2xl bg-teal-50 text-teal-600 flex items-center justify-center mb-5 group-hover:bg-teal-500 group-hover:text-white transition">
+            <svg class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 9h16M4 15h16M7 9v6m5-6v6m5-6v6"/></svg>
+          </span>
+          <h3 class="font-display font-bold text-xl text-slate-900">General Surgery</h3>
+          <p class="mt-2 text-slate-500 text-sm">Hernia repair and gallbladder surgery, performed laparoscopically for a faster recovery.</p>
+        </div>
+        <div class="reveal group bg-white rounded-2xl p-7 border border-slate-100 hover:border-brand-200 hover:shadow-xl hover:shadow-brand-900/5 transition">
+          <span class="w-14 h-14 rounded-2xl bg-brand-50 text-brand-600 flex items-center justify-center mb-5 group-hover:bg-brand-600 group-hover:text-white transition">
+            <svg class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21s-6.7-4.4-9-8.5C1.3 9 3 5 6.5 5 9 5 12 8 12 8s3-3 5.5-3C21 5 22.7 9 21 12.5 18.7 16.6 12 21 12 21z"/></svg>
+          </span>
+          <h3 class="font-display font-bold text-xl text-slate-900">Medical Weight Loss</h3>
+          <p class="mt-2 text-slate-500 text-sm">Physician-supervised, non-surgical weight-loss programs with nutrition support.</p>
+        </div>
+        <div class="reveal group bg-gradient-to-br from-brand-600 to-teal-600 rounded-2xl p-7 text-white shadow-xl shadow-brand-900/20">
+          <span class="w-14 h-14 rounded-2xl bg-white/20 flex items-center justify-center mb-5">
+            <svg class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 21V5a2 2 0 012-2h14a2 2 0 012 2v16M3 21h18M9 9h6M9 13h6"/></svg>
+          </span>
+          <h3 class="font-display font-bold text-xl">Support Every Step</h3>
+          <p class="mt-2 text-white/80 text-sm">Pre-op education, post-op care and support groups — guidance through your whole journey.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about" class="py-20 lg:py-28">
+    <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-14 items-center">
+      <div class="reveal relative">
+        <div class="rounded-[2rem] overflow-hidden shadow-2xl shadow-brand-900/15">
+          <img onerror="imgFallback(this)" class="w-full h-[480px] object-cover" src="images/dr-aryaie.jpg" alt="Dr. Amir Aryaie, MD, FACS" />
+        </div>
+        <div class="absolute -bottom-6 right-6 bg-white rounded-2xl shadow-xl px-6 py-4 text-center">
+          <p class="font-display font-extrabold text-slate-900">Dr. Amir Aryaie</p>
+          <p class="text-sm text-brand-600 font-medium">MD, FACS, FASMBS · Founder</p>
+        </div>
+      </div>
+      <div class="reveal">
+        <span class="text-brand-600 font-semibold tracking-wide uppercase text-sm">Meet your surgeon</span>
+        <h2 class="font-display font-extrabold text-3xl sm:text-4xl text-slate-900 mt-3">A leader in advanced weight-loss surgery</h2>
+        <p class="mt-5 text-slate-500">Dr. Amir Aryaie is the founder of BMI Surgical Institute and a board-certified general surgeon who has performed thousands of weight-loss and minimally invasive GI procedures. He completed his bariatric &amp; minimally invasive fellowship at University Hospitals / Case Western Reserve.</p>
+        <p class="mt-4 text-slate-500">His approach is compassionate and outcomes-focused — pairing the latest robotic and endoscopic techniques with the personal, attentive care every patient deserves.</p>
+        <div class="mt-8 grid sm:grid-cols-2 gap-4">
+          <div class="flex items-start gap-3"><span class="mt-1 w-6 h-6 rounded-full bg-teal-100 text-teal-600 flex items-center justify-center shrink-0"><svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></span><p class="text-sm text-slate-600"><span class="font-semibold text-slate-800">Board-certified</span> · FACS &amp; FASMBS</p></div>
+          <div class="flex items-start gap-3"><span class="mt-1 w-6 h-6 rounded-full bg-teal-100 text-teal-600 flex items-center justify-center shrink-0"><svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></span><p class="text-sm text-slate-600"><span class="font-semibold text-slate-800">16+ years</span> of experience</p></div>
+          <div class="flex items-start gap-3"><span class="mt-1 w-6 h-6 rounded-full bg-teal-100 text-teal-600 flex items-center justify-center shrink-0"><svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></span><p class="text-sm text-slate-600"><span class="font-semibold text-slate-800">Robotic &amp; laparoscopic</span> surgery</p></div>
+          <div class="flex items-start gap-3"><span class="mt-1 w-6 h-6 rounded-full bg-teal-100 text-teal-600 flex items-center justify-center shrink-0"><svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></span><p class="text-sm text-slate-600"><span class="font-semibold text-slate-800">Thousands</span> of procedures</p></div>
+        </div>
+        <a href="#booking" class="inline-flex items-center gap-2 mt-9 bg-brand-600 hover:bg-brand-700 text-white font-semibold px-7 py-3.5 rounded-full shadow-lg shadow-brand-600/25 transition">Schedule your visit
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== REVIEWS ===== -->
+  <section id="reviews" class="py-20 lg:py-28 bg-brand-950 text-white relative overflow-hidden">
+    <div class="absolute -top-20 -right-20 w-96 h-96 bg-brand-700/40 rounded-full blur-3xl"></div>
+    <div class="absolute -bottom-20 -left-20 w-96 h-96 bg-teal-600/30 rounded-full blur-3xl"></div>
+    <div class="max-w-7xl mx-auto px-6 relative">
+      <div class="max-w-2xl mx-auto text-center reveal">
+        <span class="text-teal-300 font-semibold tracking-wide uppercase text-sm">Patient love</span>
+        <h2 class="font-display font-extrabold text-3xl sm:text-4xl mt-3">What Atlanta is saying</h2>
+        <div class="mt-4 flex items-center justify-center gap-2 text-amber-400 text-xl">★★★★★ <span class="text-brand-200 text-base ml-2">5.0 average · 339+ verified reviews</span></div>
+      </div>
+      <div class="mt-14 grid md:grid-cols-3 gap-6">
+        <div class="reveal bg-white/10 backdrop-blur rounded-2xl p-7 border border-white/10">
+          <div class="text-amber-400 mb-3">★★★★★</div>
+          <p class="text-brand-50">"Down 90 pounds and off my diabetes medication — Dr. Aryaie and his team gave me my life back. I only wish I'd done it sooner."</p>
+          <div class="mt-5 flex items-center gap-3"><span class="w-10 h-10 rounded-full bg-teal-500 flex items-center justify-center font-bold">J</span><div><p class="font-semibold">James R.</p><p class="text-xs text-brand-200">Sleeve gastrectomy</p></div></div>
+        </div>
+        <div class="reveal bg-white/10 backdrop-blur rounded-2xl p-7 border border-white/10">
+          <div class="text-amber-400 mb-3">★★★★★</div>
+          <p class="text-brand-50">"From my first consultation through recovery, every step was explained clearly and I never felt rushed. The whole team is compassionate and genuinely skilled."</p>
+          <div class="mt-5 flex items-center gap-3"><span class="w-10 h-10 rounded-full bg-brand-500 flex items-center justify-center font-bold">✓</span><div><p class="font-semibold">Verified patient</p><p class="text-xs text-brand-200">Atlanta, GA · 2024</p></div></div>
+        </div>
+        <div class="reveal bg-white/10 backdrop-blur rounded-2xl p-7 border border-white/10">
+          <div class="text-amber-400 mb-3">★★★★★</div>
+          <p class="text-brand-50">"After years of severe acid reflux, the LINX procedure changed everything — no more nightly heartburn and no more medication."</p>
+          <div class="mt-5 flex items-center gap-3"><span class="w-10 h-10 rounded-full bg-teal-500 flex items-center justify-center font-bold">M</span><div><p class="font-semibold">Maria S.</p><p class="text-xs text-brand-200">GERD patient</p></div></div>
+        </div>
+      </div>
+      <p class="text-center text-xs text-brand-300/70 mt-8">Verified patient reviews · see more on Google, Healthgrades &amp; WebMD.</p>
+
+      <!-- Patient review carousel -->
+      <div class="mt-12 max-w-5xl mx-auto bg-slate-50 rounded-3xl p-6 sm:p-8 border border-slate-100 text-left">
+        <div class="flex flex-wrap items-center justify-center gap-x-3 gap-y-2 text-sm text-slate-500 mb-6">
+          <span class="text-amber-400 text-base" aria-hidden="true">★★★★★</span>
+          <span class="font-bold text-slate-800">5.0</span>
+          <span>· 339 reviews</span>
+          <a href="#booking" class="text-slate-600 underline hover:text-slate-900">Read all reviews</a>
+          <span class="inline-flex items-center gap-1.5 text-xs text-slate-600 pl-1">Verified reviews from Google &amp; Healthgrades</span>
+        </div>
+        <div tabindex="0" class="flex gap-5 overflow-x-auto snap-x snap-mandatory pb-3" role="list" aria-label="Patient reviews — scroll horizontally">
+          <article role="listitem" class="snap-start shrink-0 w-[270px] bg-white rounded-2xl border border-slate-100 shadow-md p-6">
+            <div class="flex items-center gap-3 mb-3"><span aria-hidden="true" class="w-12 h-12 rounded-full bg-sky-500 text-white flex items-center justify-center font-bold text-lg shrink-0">J</span><div><p class="font-bold text-slate-800">James R.</p><div class="text-amber-400 text-sm" aria-hidden="true">★★★★★</div></div></div>
+            <p class="text-sm text-slate-600 leading-relaxed">“Down 90 pounds and off my diabetes medication — Dr. Aryaie and his team gave me my life back.”</p>
+          </article>
+          <article role="listitem" class="snap-start shrink-0 w-[270px] bg-white rounded-2xl border border-slate-100 shadow-md p-6">
+            <div class="flex items-center gap-3 mb-3"><span aria-hidden="true" class="w-12 h-12 rounded-full bg-emerald-500 text-white flex items-center justify-center font-bold text-lg shrink-0">✓</span><div><p class="font-bold text-slate-800">Verified patient</p><div class="text-amber-400 text-sm" aria-hidden="true">★★★★★</div></div></div>
+            <p class="text-sm text-slate-600 leading-relaxed">“Every step was explained clearly and I never felt rushed. The whole team is compassionate and skilled.”</p>
+          </article>
+          <article role="listitem" class="snap-start shrink-0 w-[270px] bg-white rounded-2xl border border-slate-100 shadow-md p-6">
+            <div class="flex items-center gap-3 mb-3"><span aria-hidden="true" class="w-12 h-12 rounded-full bg-indigo-500 text-white flex items-center justify-center font-bold text-lg shrink-0">M</span><div><p class="font-bold text-slate-800">Maria S.</p><div class="text-amber-400 text-sm" aria-hidden="true">★★★★★</div></div></div>
+            <p class="text-sm text-slate-600 leading-relaxed">“After years of acid reflux, the LINX procedure changed everything — no more heartburn, no more medication.”</p>
+          </article>
+          <article role="listitem" class="snap-start shrink-0 w-[270px] bg-white rounded-2xl border border-slate-100 shadow-md p-6">
+            <div class="flex items-center gap-3 mb-3"><span aria-hidden="true" class="w-12 h-12 rounded-full bg-rose-500 text-white flex items-center justify-center font-bold text-lg shrink-0">R</span><div><p class="font-bold text-slate-800">Robert K.</p><div class="text-amber-400 text-sm" aria-hidden="true">★★★★★</div></div></div>
+            <p class="text-sm text-slate-600 leading-relaxed">“My sleeve surgery was smooth and the follow-up support has been incredible. I couldn't recommend them more.”</p>
+          </article>
+          <article role="listitem" class="snap-start shrink-0 w-[270px] bg-white rounded-2xl border border-slate-100 shadow-md p-6">
+            <div class="flex items-center gap-3 mb-3"><span aria-hidden="true" class="w-12 h-12 rounded-full bg-amber-500 text-white flex items-center justify-center font-bold text-lg shrink-0">D</span><div><p class="font-bold text-slate-800">Denise W.</p><div class="text-amber-400 text-sm" aria-hidden="true">★★★★★</div></div></div>
+            <p class="text-sm text-slate-600 leading-relaxed">“Truly the best decision I've ever made for my health. Professional, skilled, and genuinely caring.”</p>
+          </article>
+          <article role="listitem" class="snap-start shrink-0 w-[270px] bg-white rounded-2xl border border-slate-100 shadow-md p-6">
+            <div class="flex items-center gap-3 mb-3"><span aria-hidden="true" class="w-12 h-12 rounded-full bg-teal-500 text-white flex items-center justify-center font-bold text-lg shrink-0">A</span><div><p class="font-bold text-slate-800">Anthony P.</p><div class="text-amber-400 text-sm" aria-hidden="true">★★★★★</div></div></div>
+            <p class="text-sm text-slate-600 leading-relaxed">“Minimally invasive hernia repair — small incisions and a quick recovery. Dr. Aryaie is the best.”</p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== BOOKING ===== -->
+  <section id="booking" class="py-20 lg:py-28 bg-slate-50/60">
+    <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-10 items-stretch">
+      <!-- Online scheduler -->
+      <div class="reveal bg-white rounded-3xl shadow-xl shadow-brand-900/5 border border-slate-100 p-8">
+        <div class="flex items-center gap-3 mb-2">
+          <span class="w-10 h-10 rounded-xl bg-brand-50 text-brand-600 flex items-center justify-center"><svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8 7V3m8 4V3M3 11h18M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg></span>
+          <h3 class="font-display font-extrabold text-2xl text-slate-900">Book online</h3>
+        </div>
+        <p class="text-slate-500 text-sm mb-6">Pick a day and time that works for you. We'll confirm by phone or text.</p>
+
+        <p class="text-sm font-semibold text-slate-700 mb-3">Select a day</p>
+        <div id="dayPicker" class="grid grid-cols-4 gap-2 mb-6"></div>
+
+        <p class="text-sm font-semibold text-slate-700 mb-3">Available times</p>
+        <div id="timePicker" class="grid grid-cols-3 sm:grid-cols-4 gap-2 mb-6"></div>
+
+        <button onclick="confirmSlot()" class="w-full bg-brand-600 hover:bg-brand-700 text-white font-semibold py-3.5 rounded-xl shadow-lg shadow-brand-600/25 transition">Continue to confirm →</button>
+        <p id="slotMsg" class="text-center text-sm text-teal-600 font-medium mt-4 h-5"></p>
+      </div>
+
+      <!-- Request form -->
+      <div class="reveal bg-white rounded-3xl shadow-xl shadow-brand-900/5 border border-slate-100 p-8">
+        <h3 class="font-display font-extrabold text-2xl text-slate-900">Request an appointment</h3>
+        <p class="text-slate-500 text-sm mt-1 mb-6">Prefer we reach out? Send your details and our team will call you back.</p>
+        <form onsubmit="event.preventDefault(); formDone(this);" class="space-y-4">
+          <div class="grid sm:grid-cols-2 gap-4">
+            <div><label class="text-sm font-medium text-slate-700">First name</label><input required class="mt-1 w-full rounded-xl border border-slate-200 px-4 py-2.5 focus:ring-2 focus:ring-brand-500 focus:border-brand-500 outline-none" placeholder="Jane" /></div>
+            <div><label class="text-sm font-medium text-slate-700">Last name</label><input required class="mt-1 w-full rounded-xl border border-slate-200 px-4 py-2.5 focus:ring-2 focus:ring-brand-500 focus:border-brand-500 outline-none" placeholder="Doe" /></div>
+          </div>
+          <div class="grid sm:grid-cols-2 gap-4">
+            <div><label class="text-sm font-medium text-slate-700">Phone</label><input required type="tel" class="mt-1 w-full rounded-xl border border-slate-200 px-4 py-2.5 focus:ring-2 focus:ring-brand-500 focus:border-brand-500 outline-none" placeholder="(678) 555-0100" /></div>
+            <div><label class="text-sm font-medium text-slate-700">Email</label><input type="email" class="mt-1 w-full rounded-xl border border-slate-200 px-4 py-2.5 focus:ring-2 focus:ring-brand-500 focus:border-brand-500 outline-none" placeholder="jane@email.com" /></div>
+          </div>
+          <div><label class="text-sm font-medium text-slate-700">Reason for visit</label>
+            <select class="mt-1 w-full rounded-xl border border-slate-200 px-4 py-2.5 bg-white focus:ring-2 focus:ring-brand-500 focus:border-brand-500 outline-none">
+              <option>New patient consultation</option><option>Weight-loss surgery</option><option>Reflux / GERD</option><option>Hernia / general surgery</option><option>Medical weight loss</option><option>Other</option>
+            </select>
+          </div>
+          <div><label class="text-sm font-medium text-slate-700">Anything we should know?</label><textarea rows="3" class="mt-1 w-full rounded-xl border border-slate-200 px-4 py-2.5 focus:ring-2 focus:ring-brand-500 focus:border-brand-500 outline-none" placeholder="Optional"></textarea></div>
+          <button class="w-full bg-slate-900 hover:bg-slate-800 text-white font-semibold py-3.5 rounded-xl transition">Request my appointment</button>
+          <p class="text-xs text-slate-400 text-center">By submitting you agree to be contacted about scheduling. We accept most major insurance plans.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact" class="py-20 lg:py-28">
+    <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center">
+      <div class="reveal">
+        <span class="text-brand-600 font-semibold tracking-wide uppercase text-sm">Visit us</span>
+        <h2 class="font-display font-extrabold text-3xl sm:text-4xl text-slate-900 mt-3">We'd love to meet you</h2>
+        <p class="mt-4 text-slate-500">Conveniently located in Cumberland, Atlanta — with easy parking and a warm welcome waiting. Additional offices in Roswell &amp; Snellville.</p>
+        <div class="mt-8 space-y-5">
+          <div class="flex items-start gap-4"><span class="w-11 h-11 rounded-xl bg-brand-50 text-brand-600 flex items-center justify-center shrink-0"><svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a2 2 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg></span><div><p class="font-semibold text-slate-800">Our office</p><p class="text-slate-500">2303 Cumberland Parkway SE, Suite 2<br/>Atlanta, GA 30339</p></div></div>
+          <div class="flex items-start gap-4"><span class="w-11 h-11 rounded-xl bg-brand-50 text-brand-600 flex items-center justify-center shrink-0"><svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.95.68l1.5 4.5a1 1 0 01-.5 1.2l-2.26 1.13a11 11 0 005.5 5.5l1.13-2.26a1 1 0 011.2-.5l4.5 1.5a1 1 0 01.68.95V19a2 2 0 01-2 2h-1C9.7 21 3 14.3 3 6V5z"/></svg></span><div><p class="font-semibold text-slate-800">Call or text</p><a href="tel:+16786260909" class="text-brand-600 font-medium hover:underline">(678) 626-0909</a></div></div>
+          <div class="flex items-start gap-4"><span class="w-11 h-11 rounded-xl bg-brand-50 text-brand-600 flex items-center justify-center shrink-0"><svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg></span><div><p class="font-semibold text-slate-800">Hours</p><p class="text-slate-500">Mon – Fri: 8:00 AM – 5:00 PM<br/>Sat: 8 AM–1 PM · Sun: Closed</p></div></div>
+        </div>
+      </div>
+      <div class="reveal rounded-3xl overflow-hidden shadow-xl shadow-brand-900/10 border border-slate-100 h-[420px]">
+        <iframe class="w-full h-full" style="border:0" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=2303+Cumberland+Parkway+SE+Suite+2+Atlanta+GA+30339&output=embed"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="bg-brand-950 text-brand-200">
+    <div class="max-w-7xl mx-auto px-6 py-14 grid md:grid-cols-3 gap-10">
+      <div>
+        <div class="flex items-center gap-3 mb-4">
+          <span class="w-10 h-10 rounded-xl bg-gradient-to-br from-brand-500 to-teal-500 flex items-center justify-center text-white"><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C9 2 7.5 3 6 3S3 2.2 2.4 3.5C1.6 5.2 2.3 8.6 3 12c.6 3 .9 8 2.4 8 1.2 0 1.3-3 1.9-4.6.4-1.1 1-1.9 1.7-1.9h2c.7 0 1.3.8 1.7 1.9C16 17 16.1 20 17.3 20c1.5 0 1.8-5 2.4-8 .7-3.4 1.4-6.8.6-8.5C19.7 2.2 19 3 18 3s-3-1-6-1z"/></svg></span>
+          <span class="font-display font-extrabold text-white text-lg">BMI Surgical Institute</span>
+        </div>
+        <p class="text-sm text-brand-300/80 max-w-xs">Advanced bariatric, reflux and minimally invasive surgery for Atlanta.</p>
+      </div>
+      <div>
+        <p class="font-semibold text-white mb-3">Quick links</p>
+        <ul class="space-y-2 text-sm">
+          <li><a href="#services" class="hover:text-white transition">Services</a></li>
+          <li><a href="#about" class="hover:text-white transition">About Dr. Aryaie</a></li>
+          <li><a href="#reviews" class="hover:text-white transition">Reviews</a></li>
+          <li><a href="#booking" class="hover:text-white transition">Book online</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="font-semibold text-white mb-3">Get in touch</p>
+        <ul class="space-y-2 text-sm">
+          <li>2303 Cumberland Parkway SE, Ste 2</li>
+          <li>Atlanta, GA 30339</li>
+          <li><a href="tel:+16786260909" class="hover:text-white transition">(678) 626-0909</a></li>
+          <li><a href="mailto:scheduling@bmisurgical.com" class="hover:text-white transition">scheduling@bmisurgical.com</a></li>
+          <li>Mon–Fri · 8 AM – 5 PM · Sat 8–1</li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-white/10">
+      <div class="max-w-7xl mx-auto px-6 py-5 text-xs text-brand-300/70 flex flex-col sm:flex-row justify-between gap-2">
+        <p>© 2026 BMI Surgical Institute · Dr. Amir Aryaie, MD, FACS</p>
+        <p>Prototype design · Now accepting new patients</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Mobile sticky call bar -->
+  <a href="tel:+16786260909" class="sm:hidden fixed bottom-4 left-4 right-4 z-50 bg-brand-600 text-white font-semibold py-3.5 rounded-full shadow-2xl flex items-center justify-center gap-2">
+    <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.95.68l1.5 4.5a1 1 0 01-.5 1.2l-2.26 1.13a11 11 0 005.5 5.5l1.13-2.26a1 1 0 011.2-.5l4.5 1.5a1 1 0 01.68.95V19a2 2 0 01-2 2h-1C9.7 21 3 14.3 3 6V5z"/></svg>
+    Call (678) 626-0909
+  </a>
+
+  <script>
+    // Graceful image fallback -> soft gradient block
+    function imgFallback(img){
+      img.onerror=null;
+      const d=document.createElement('div');
+      d.className=img.className+' flex items-center justify-center';
+      d.style.cssText=img.style.cssText;
+      d.style.background='linear-gradient(135deg,#dbeefe,#ccfbf1)';
+      d.innerHTML='<svg style="width:48px;height:48px;color:#60b5fa" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C9 2 7.5 3 6 3S3 2.2 2.4 3.5C1.6 5.2 2.3 8.6 3 12c.6 3 .9 8 2.4 8 1.2 0 1.3-3 1.9-4.6.4-1.1 1-1.9 1.7-1.9h2c.7 0 1.3.8 1.7 1.9C16 17 16.1 20 17.3 20c1.5 0 1.8-5 2.4-8 .7-3.4 1.4-6.8.6-8.5C19.7 2.2 19 3 18 3s-3-1-6-1z"/></svg>';
+      img.replaceWith(d);
+    }
+
+    // Scroll reveal
+    const io=new IntersectionObserver((es)=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}}),{threshold:.12});
+    document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+
+    // Nav shadow on scroll
+    addEventListener('scroll',()=>{document.getElementById('nav').classList.toggle('shadow-md',scrollY>10);});
+
+    // Booking widget
+    let selDay=null, selTime=null;
+    const days=[], today=new Date();
+    let added=0,i=0;
+    while(added<8){
+      const d=new Date(today); d.setDate(today.getDate()+i); i++;
+      const dow=d.getDay(); if(dow===0||dow===6) continue; // Mon-Fri only
+      days.push(d); added++;
+    }
+    const times=['8:00','9:00','10:00','11:00','1:00','2:00','3:00','4:00'];
+    const dp=document.getElementById('dayPicker');
+    days.forEach((d,idx)=>{
+      const b=document.createElement('button');
+      b.className='flex flex-col items-center py-2 rounded-xl border border-slate-200 hover:border-brand-400 transition text-sm';
+      b.innerHTML='<span class="text-xs text-slate-400">'+d.toLocaleDateString('en-US',{weekday:'short'})+'</span><span class="font-semibold text-slate-800">'+d.getDate()+'</span>';
+      b.onclick=()=>{selDay=d;[...dp.children].forEach(c=>c.classList.remove('!border-brand-600','bg-brand-50','ring-2','ring-brand-500'));b.classList.add('!border-brand-600','bg-brand-50','ring-2','ring-brand-500');document.getElementById('slotMsg').textContent='';};
+      dp.appendChild(b);
+    });
+    const tp=document.getElementById('timePicker');
+    times.forEach(t=>{
+      const b=document.createElement('button');
+      b.className='py-2 rounded-xl border border-slate-200 hover:border-brand-400 transition text-sm font-medium text-slate-700';
+      b.textContent=t+(parseInt(t)<7?' PM':parseInt(t)<12?' AM':' PM');
+      b.onclick=()=>{selTime=b.textContent;[...tp.children].forEach(c=>c.classList.remove('!border-brand-600','bg-brand-50','ring-2','ring-brand-500'));b.classList.add('!border-brand-600','bg-brand-50','ring-2','ring-brand-500');document.getElementById('slotMsg').textContent='';};
+      tp.appendChild(b);
+    });
+    function confirmSlot(){
+      const m=document.getElementById('slotMsg');
+      if(!selDay||!selTime){m.className='text-center text-sm text-rose-500 font-medium mt-4 h-5';m.textContent='Please pick a day and a time.';return;}
+      m.className='text-center text-sm text-teal-600 font-medium mt-4 h-5';
+      m.textContent='✓ '+selDay.toLocaleDateString('en-US',{weekday:'long',month:'long',day:'numeric'})+' at '+selTime+' — we\'ll confirm shortly!';
+    }
+    function formDone(f){
+      f.innerHTML='<div class="text-center py-10"><div class="w-16 h-16 mx-auto rounded-full bg-teal-100 text-teal-600 flex items-center justify-center mb-4"><svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></div><h4 class="font-display font-bold text-xl text-slate-900">Thank you!</h4><p class="text-slate-500 mt-2">Your request has been received. Our team will call you shortly to confirm your appointment.</p></div>';
+    }
+  </script>
+
+  <!-- ===== AI CHAT ASSISTANT (prototype · rule-based, no backend) ===== -->
+  <script>
+  (function(){
+    const BOT={primary:'#2479eb',from:'#2479eb',to:'#14b8a6'};
+    const D={phone:'(678) 626-0909',tel:'tel:+16786260909',addr:'2303 Cumberland Parkway SE, Suite 2, Atlanta, GA 30339',hours:'Mon–Fri: 8:00 AM – 5:00 PM\nSat: 8 AM–1 PM · Sun: Closed',maps:'https://www.google.com/maps?q=2303+Cumberland+Parkway+SE+Suite+2+Atlanta+GA+30339'};
+    const state={flow:null,step:null,data:{}};
+    let greeted=false;
+
+    // styles
+    const st=document.createElement('style');
+    st.textContent='.lc-chip{transition:.15s}.lc-chip:hover{background:var(--lc-primary)!important;color:#fff!important;border-color:var(--lc-primary)!important}.lc-typing span{display:inline-block;width:6px;height:6px;border-radius:9999px;background:#94a3b8;animation:lcb 1s infinite}.lc-typing span:nth-child(2){animation-delay:.15s}.lc-typing span:nth-child(3){animation-delay:.3s}@keyframes lcb{0%,60%,100%{transform:translateY(0);opacity:.4}30%{transform:translateY(-4px);opacity:1}}@keyframes lcpop{from{transform:scale(.9) translateY(12px);opacity:0}to{transform:none;opacity:1}}#lc-panel:not(.hidden){animation:lcpop .22s ease}';
+    document.head.appendChild(st);
+
+    const root=document.createElement('div');
+    root.id='lc-root';
+    root.style.setProperty('--lc-primary',BOT.primary);
+    root.innerHTML=`
+      <div id="lc-greet" class="hidden sm:block fixed z-[60] right-24 bottom-8 max-w-[210px] bg-white/95 backdrop-blur-sm border border-black/5 rounded-2xl rounded-br-sm px-3.5 py-2.5 shadow-xl opacity-0 translate-x-2 pointer-events-none transition-all duration-300 cursor-pointer">
+        <button id="lc-greet-x" aria-label="Dismiss message" class="absolute -top-2 -right-2 w-5 h-5 rounded-full bg-white text-slate-400 text-sm shadow flex items-center justify-center">×</button>
+        <p class="text-sm text-slate-700 leading-snug"><span class="font-semibold">Hi, I'm Dr. Aryaie's assistant! 👋</span><br><span class="text-slate-500 text-xs">Questions or want to book? Tap to chat.</span></p>
+      </div>
+      <button id="lc-fab" aria-label="Open chat with our virtual assistant" class="fixed z-[60] right-5 bottom-24 sm:bottom-6 w-16 h-16 rounded-full shadow-xl overflow-hidden ring-2 ring-white transition hover:scale-105">
+        <img src="images/dr-aryaie-avatar.jpg" alt="" class="w-full h-full object-cover" />
+        <span aria-hidden="true" class="absolute bottom-0 right-0 w-5 h-5 rounded-full text-white flex items-center justify-center border-2 border-white" style="background:${BOT.primary};"><svg class="w-2.5 h-2.5" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.8 9.8 0 01-4-.83L3 20l1.1-3.3A7.5 7.5 0 013 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/></svg></span>
+        <span aria-hidden="true" class="absolute top-0 right-0 w-3.5 h-3.5 rounded-full bg-emerald-400 border-2 border-white"></span>
+      </button>
+      <div id="lc-panel" class="hidden fixed z-[60] right-5 bottom-24 sm:bottom-6 w-[90vw] max-w-[380px] h-[70vh] max-h-[560px] bg-white rounded-2xl shadow-2xl flex flex-col overflow-hidden">
+        <div class="flex items-center gap-3 p-4 text-white" style="background:linear-gradient(135deg,${BOT.from},${BOT.to})">
+          <div class="w-9 h-9 rounded-full bg-white/20 flex items-center justify-center text-lg">🩺</div>
+          <div class="flex-1 leading-tight">
+            <p class="font-semibold text-sm">BMI Surgical Assistant</p>
+            <p class="text-[11px] text-white/80 flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-emerald-300"></span>Online · replies instantly</p>
+          </div>
+          <button id="lc-close" aria-label="Close chat" class="text-white/80 hover:text-white"><svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg></button>
+        </div>
+        <div id="lc-msgs" class="flex-1 overflow-y-auto p-4 space-y-3" style="background:#f8fafc"></div>
+        <div class="p-3 border-t border-slate-100 flex items-center gap-2 bg-white">
+          <input id="lc-text" type="text" placeholder="Type your message…" autocomplete="off" class="flex-1 text-sm px-3.5 py-2.5 rounded-full bg-slate-100 outline-none focus:ring-2 focus:ring-slate-300" />
+          <button id="lc-send" aria-label="Send" class="w-10 h-10 rounded-full flex items-center justify-center text-white shrink-0" style="background:${BOT.primary}"><svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+        </div>
+      </div>`;
+    document.body.appendChild(root);
+
+    const fab=root.querySelector('#lc-fab'), panel=root.querySelector('#lc-panel'), msgs=root.querySelector('#lc-msgs'), input=root.querySelector('#lc-text');
+    const el=(tag,cls,text)=>{const e=document.createElement(tag);if(cls)e.className=cls;if(text!=null)e.textContent=text;return e;};
+    const scroll=()=>{msgs.scrollTop=msgs.scrollHeight;};
+
+    function addUser(text){const r=el('div','flex justify-end');const b=el('div','rounded-2xl rounded-br-sm px-3.5 py-2.5 text-sm text-white shadow-sm max-w-[80%] whitespace-pre-line',text);b.style.background=BOT.primary;r.appendChild(b);msgs.appendChild(r);scroll();}
+    function addBot(text){const r=el('div','flex gap-2 items-end');const a=el('div','w-7 h-7 rounded-full flex items-center justify-center text-xs shrink-0','🩺');a.style.background='#e2e8f0';const b=el('div','bg-white rounded-2xl rounded-bl-sm px-3.5 py-2.5 text-sm text-slate-700 shadow-sm max-w-[80%] whitespace-pre-line',text);r.append(a,b);msgs.appendChild(r);scroll();}
+    function addChips(items){const w=el('div','flex flex-wrap gap-2 pl-9');items.forEach(it=>{if(typeof it==='string'){const c=el('button','lc-chip text-xs font-semibold px-3 py-1.5 rounded-full bg-white border cursor-pointer',it);c.style.color=BOT.primary;c.style.borderColor=BOT.primary;c.onclick=()=>{w.remove();send(it);};w.appendChild(c);}else{const a=el('a','lc-chip text-xs font-semibold px-3 py-1.5 rounded-full bg-white border cursor-pointer no-underline inline-block',it.label);a.style.color=BOT.primary;a.style.borderColor=BOT.primary;a.href=it.href;if(it.href.indexOf('http')===0)a.target='_blank';w.appendChild(a);}});msgs.appendChild(w);scroll();}
+    function addTyping(){const r=el('div','flex gap-2 items-end');const a=el('div','w-7 h-7 rounded-full flex items-center justify-center text-xs shrink-0','🩺');a.style.background='#e2e8f0';const b=el('div','bg-white rounded-2xl rounded-bl-sm px-4 py-3 shadow-sm');const d=el('div','lc-typing flex gap-1');d.append(el('span'),el('span'),el('span'));b.appendChild(d);r.append(a,b);msgs.appendChild(r);scroll();return r;}
+
+    function greeting(){return{text:`Hi there! 👋 I'm the BMI Surgical Institute virtual assistant. How can I help you today?`,chips:['Book a consultation','Our procedures','Hours & location','Insurance & coverage']};}
+
+    function startBooking(){state.flow='book';state.step='name';state.data={};return{text:`Wonderful — I'd be happy to help you book a consultation! 😊\n\nFirst, what's your name?`};}
+
+    function handleBooking(raw){
+      const t=raw.toLowerCase().trim();
+      if(/(cancel|nevermind|never mind|\bstop\b|exit|quit)/.test(t)){state.flow=null;return{text:`No problem, I've cancelled that. What else can I help you with?`,chips:['Our services','Hours & location','Book a consultation']};}
+      if(state.step==='name'){state.data.name=raw.trim();state.step='phone';return{text:`Nice to meet you, ${state.data.name.split(' ')[0]}! 👋 What's the best phone number to reach you?`};}
+      if(state.step==='phone'){const d=raw.replace(/\D/g,'');if(d.length<7)return{text:`Hmm, that doesn't look like a complete number. Could you share a phone number where we can reach you?`};state.data.phone=raw.trim();state.step='day';return{text:`Perfect. Which day works best for you? (We're open Mon–Fri)`,chips:['Monday','Tuesday','Wednesday','Thursday',`I'm flexible`]};}
+      if(state.step==='day'){state.data.day=raw.trim();state.step='time';return{text:`Great — ${state.data.day}. Morning or afternoon?`,chips:['Morning (8 AM–12)','Afternoon (1–5 PM)']};}
+      if(state.step==='time'){state.data.time=raw.trim();state.flow=null;state.step=null;return{text:`All set! Here's your request: ✅\n\n👤 ${state.data.name}\n📞 ${state.data.phone}\n📅 ${state.data.day} · ${state.data.time}\n\nOur team will call you shortly to confirm your consultation. Thank you so much! 🩺`,chips:[{label:'Call us now',href:D.tel},'Done']};}
+      state.flow=null;return botReply(raw);
+    }
+
+    function botReply(raw){
+      const t=raw.toLowerCase();
+      if(/(book|appointment|appt|schedule|consult|reserve|come in)/.test(t))return startBooking();
+      if(/(hour|open|close|location|address|direction|where|parking|find you)/.test(t))return{text:`We'd love to see you! 📍\n\n🕒 ${D.hours}\n\n📍 ${D.addr}`,chips:[{label:'Get directions',href:D.maps},'Book a consultation']};
+      if(/(phone|call|number|contact|reach|text|email)/.test(t))return{text:`You can reach our team at ${D.phone}, or email scheduling@bmisurgical.com. We're happy to help!`,chips:[{label:'Call now',href:D.tel},'Book a consultation']};
+      if(/(insuranc|cost|price|pricing|\bpay\b|afford|expensive|coverage|cover|financ)/.test(t))return{text:`Most major insurers cover bariatric surgery, and we verify your benefits for you. We also offer CareCredit financing if you're self-pay. 😊`,chips:['Book a consultation','Am I a candidate?']};
+      if(/(candidate|qualify|eligible|\bbmi\b|how much|weigh|start)/.test(t))return{text:`Most patients qualify for weight-loss surgery with a BMI of 35+ (or 30+ with a related condition like diabetes or sleep apnea). The best next step is a consultation so Dr. Aryaie can review your history.`,chips:['Book a consultation','Our procedures']};
+      if(/(emergency|severe|urgent|vomit|fever|bleed|post.?op|complication|after surgery)/.test(t))return{text:`If this is a medical emergency, please call 911. For an urgent post-operative concern, call us right away at ${D.phone} and our team will help. 💙`,chips:[{label:'Call now',href:D.tel}]};
+      if(/(sleeve|gastric|bypass|\bband\b|balloon|weight loss|bariatric|lose weight)/.test(t))return{text:`We offer the full range of weight-loss procedures — gastric sleeve, gastric bypass, mini bypass, duodenal switch, gastric balloon, endoscopic sleeve, revisional surgery, and a medical weight-loss program. Want to find the right fit?`,chips:['Book a consultation','Am I a candidate?']};
+      if(/(reflux|gerd|heartburn|linx|acid|hernia|hiatal|\btif\b|gallbladder)/.test(t))return{text:`We treat acid reflux & GERD with options like the LINX device, TIF, hiatal hernia repair and Stretta — plus general surgery such as hernia and gallbladder procedures.`,chips:['Book a consultation','Our procedures']};
+      if(/(service|procedure|offer|do you do|provide|help with|what.*do|treatment)/.test(t))return{text:`We provide comprehensive surgical care:\n\n• Weight-loss surgery (sleeve, bypass & more)\n• Reflux & GERD treatment (LINX, TIF)\n• Esophageal & motility care\n• General surgery (hernia, gallbladder)\n• Medical weight-loss program`,chips:['Weight-loss surgery','Reflux / GERD','Book a consultation']};
+      if(/(\bdr\b|doctor|aryaie|about|who |experience|qualif|background|trained|surgeon|credential)/.test(t))return{text:`Dr. Amir Aryaie, MD, FACS, FASMBS is the founder of BMI Surgical Institute — a board-certified surgeon with 16+ years of experience and thousands of weight-loss and minimally invasive GI procedures. He completed his bariatric fellowship at Case Western / University Hospitals.`,chips:['Book a consultation','Our procedures']};
+      if(/(hi|hello|hey|howdy|good morning|good afternoon|good evening|hiya)/.test(t))return greeting();
+      if(/(thank|thanks|appreciate|awesome|perfect|great|cool|nice)/.test(t))return{text:`You're very welcome! 😊 Anything else I can help with?`,chips:['Book a consultation','Hours & location']};
+      if(/(bye|goodbye|no thanks|that'?s all|nothing|\bdone\b|nope)/.test(t))return{text:`Thanks for stopping by — we look forward to helping you on your journey! 💙`,chips:['Book a consultation']};
+      return{text:`I can help with consultations, procedures, hours, location, insurance and eligibility. What would you like to do?`,chips:['Book a consultation','Our procedures','Hours & location','Insurance & coverage']};
+    }
+
+    function send(text){text=(text||'').trim();if(!text)return;addUser(text);input.value='';const ty=addTyping();setTimeout(()=>{ty.remove();const res=state.flow==='book'?handleBooking(text):botReply(text);addBot(res.text);if(res.chips)addChips(res.chips);},480+Math.random()*420);}
+
+    function openPanel(){hideGreet();panel.classList.remove('hidden');fab.classList.add('hidden');if(!greeted){greeted=true;const ty=addTyping();setTimeout(()=>{ty.remove();const g=greeting();addBot(g.text);addChips(g.chips);},500);}setTimeout(()=>input.focus(),60);}
+    function closePanel(){panel.classList.add('hidden');fab.classList.remove('hidden');}
+
+    fab.onclick=openPanel;
+    root.querySelector('#lc-close').onclick=closePanel;
+    root.querySelector('#lc-send').onclick=()=>send(input.value);
+    input.addEventListener('keydown',e=>{if(e.key==='Enter')send(input.value);});
+
+    const greet=root.querySelector('#lc-greet'), greetX=root.querySelector('#lc-greet-x');
+    function showGreet(){ if(greet){greet.classList.remove('opacity-0','translate-x-2','pointer-events-none');greet.classList.add('opacity-100','translate-x-0');} }
+    function hideGreet(){ if(greet){greet.classList.add('opacity-0','translate-x-2','pointer-events-none');greet.classList.remove('opacity-100','translate-x-0');} }
+    if(greet){ setTimeout(showGreet,2600); greet.addEventListener('click',openPanel); greetX.addEventListener('click',e=>{e.stopPropagation();hideGreet();}); fab.addEventListener('mouseenter',showGreet); }
+  })();
+  </script>
+</body>
+</html>

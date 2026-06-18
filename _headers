@@ -1,0 +1,3 @@
+# Cloudflare Pages headers — keep client prototypes out of search engines
+/*
+  X-Robots-Tag: noindex, nofollow
