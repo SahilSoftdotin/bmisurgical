@@ -71,9 +71,15 @@
     #hero-canvas { position:absolute; inset:0; width:100%; height:100%; z-index:0; }
 
     /* Before/After */
+    .ba { position:relative; }
+    .ba img { user-select:none; -webkit-user-drag:none; pointer-events:none; }
     .ba-after { position:absolute; inset:0; clip-path:inset(0 50% 0 0); }
-    .ba-handle { position:absolute; top:0; bottom:0; left:50%; width:3px; background:#fff; transform:translateX(-50%); box-shadow:0 0 0 1px rgba(11,27,52,.15); }
+    .ba-handle { position:absolute; top:0; bottom:0; left:50%; width:3px; background:#fff; transform:translateX(-50%); box-shadow:0 0 0 1px rgba(11,27,52,.15); pointer-events:none; z-index:15; }
     .ba-knob { position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); width:42px; height:42px; border-radius:9999px; background:#fff; box-shadow:0 6px 20px rgba(11,27,52,.3); display:flex; align-items:center; justify-content:center; color:#1e66f0; }
+    .ba-range { position:absolute; inset:0; width:100%; height:100%; margin:0; padding:0; opacity:0; cursor:ew-resize; z-index:20; -webkit-appearance:none; appearance:none; background:transparent; }
+    .ba-range::-webkit-slider-thumb { -webkit-appearance:none; width:44px; height:100%; cursor:ew-resize; }
+    .ba-range::-moz-range-thumb { width:44px; height:200px; border:0; background:transparent; cursor:ew-resize; }
+    .ba-tag { position:absolute; bottom:.6rem; z-index:16; font-size:11px; font-weight:700; letter-spacing:.04em; padding:.25rem .6rem; border-radius:9999px; background:rgba(11,27,52,.72); color:#fff; }
 
     /* Reduced motion (WCAG 2.3.3) */
     @media (prefers-reduced-motion: reduce) {
@@ -104,7 +110,7 @@
         <div class="hidden lg:flex items-center gap-6 text-sm font-medium text-ink/75">
           <a href="surgery-options.html" class="text-brand-700 font-semibold hover:text-brand-800 transition">Surgery Options</a>
           <a href="surgery-options.html#bmi" class="hover:text-brand-700 transition">BMI Calculator</a>
-          <a href="#doctor" class="hover:text-brand-700 transition">Meet Dr. Aryaie</a>
+          <a href="team.html" class="hover:text-brand-700 transition">Our Team</a>
           <a href="#services" class="hover:text-brand-700 transition">Services</a>
           <a href="#reviews" class="hover:text-brand-700 transition">Reviews</a>
           <a href="#contact" class="hover:text-brand-700 transition">Contact</a>
@@ -319,25 +325,34 @@
         </div>
         <div class="mt-14 grid md:grid-cols-3 gap-6">
           <figure class="glass rounded-2xl p-4" data-anim>
-            <div class="relative h-80 rounded-xl overflow-hidden bg-slate-100">
-              <img src="images/ba-result-1.jpg" alt="Patient celebrating weight-loss results in their old, now oversized jeans" class="w-full h-full object-cover object-top" />
-              <span class="absolute top-3 left-3 bg-brand-600/90 text-white text-[11px] font-bold px-2.5 py-1 rounded-full">BEFORE &amp; AFTER</span>
+            <div class="ba h-80 rounded-xl overflow-hidden bg-slate-100">
+              <img src="images/ba-before-1.jpg" alt="" class="absolute inset-0 w-full h-full object-cover object-top" />
+              <div class="ba-after"><img src="images/ba-after-1.jpg" alt="Representative gastric sleeve weight-loss result" class="w-full h-full object-cover object-top" /></div>
+              <span class="ba-tag left-3">BEFORE</span><span class="ba-tag right-3">AFTER</span>
+              <div class="ba-handle"><div class="ba-knob"><svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8 7l-4 5 4 5M16 7l4 5-4 5"/></svg></div></div>
+              <input class="ba-range" type="range" min="0" max="100" value="50" aria-label="Drag to compare before and after — gastric sleeve" />
             </div>
             <figcaption class="pt-3 px-1 text-sm text-ink/70 font-medium">Gastric sleeve · sustained weight loss</figcaption>
           </figure>
 
           <figure class="glass rounded-2xl p-4" data-anim>
-            <div class="relative h-80 rounded-xl overflow-hidden bg-slate-100">
-              <img src="images/ba-result-2.jpg" alt="Patient showing weight-loss results in their old, now oversized jeans" class="w-full h-full object-cover object-top" />
-              <span class="absolute top-3 left-3 bg-brand-600/90 text-white text-[11px] font-bold px-2.5 py-1 rounded-full">BEFORE &amp; AFTER</span>
+            <div class="ba h-80 rounded-xl overflow-hidden bg-slate-100">
+              <img src="images/ba-before-2.jpg" alt="" class="absolute inset-0 w-full h-full object-cover object-top" />
+              <div class="ba-after"><img src="images/ba-after-2.jpg" alt="Representative gastric bypass weight-loss result" class="w-full h-full object-cover object-top" /></div>
+              <span class="ba-tag left-3">BEFORE</span><span class="ba-tag right-3">AFTER</span>
+              <div class="ba-handle"><div class="ba-knob"><svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8 7l-4 5 4 5M16 7l4 5-4 5"/></svg></div></div>
+              <input class="ba-range" type="range" min="0" max="100" value="50" aria-label="Drag to compare before and after — gastric bypass" />
             </div>
             <figcaption class="pt-3 px-1 text-sm text-ink/70 font-medium">Gastric bypass · metabolic reset</figcaption>
           </figure>
 
           <figure class="glass rounded-2xl p-4" data-anim>
-            <div class="relative h-80 rounded-xl overflow-hidden bg-slate-100">
-              <img src="images/ba-result-3.jpg" alt="Patient showing weight-loss results in their old, now oversized trousers" class="w-full h-full object-cover object-top" />
-              <span class="absolute top-3 left-3 bg-brand-600/90 text-white text-[11px] font-bold px-2.5 py-1 rounded-full">BEFORE &amp; AFTER</span>
+            <div class="ba h-80 rounded-xl overflow-hidden bg-slate-100">
+              <img src="images/ba-before-3.jpg" alt="" class="absolute inset-0 w-full h-full object-cover object-top" />
+              <div class="ba-after"><img src="images/ba-after-3.jpg" alt="Representative medical weight-loss result" class="w-full h-full object-cover object-top" /></div>
+              <span class="ba-tag left-3">BEFORE</span><span class="ba-tag right-3">AFTER</span>
+              <div class="ba-handle"><div class="ba-knob"><svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8 7l-4 5 4 5M16 7l4 5-4 5"/></svg></div></div>
+              <input class="ba-range" type="range" min="0" max="100" value="50" aria-label="Drag to compare before and after — medical weight loss" />
             </div>
             <figcaption class="pt-3 px-1 text-sm text-ink/70 font-medium">Medical weight loss · non-surgical program</figcaption>
           </figure>
@@ -504,7 +519,7 @@
           <address class="mt-8 space-y-4 not-italic">
             <div class="flex items-start gap-4">
               <span aria-hidden="true" class="w-11 h-11 rounded-xl bg-brand-600/10 text-brand-700 flex items-center justify-center shrink-0"><svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a2 2 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg></span>
-              <div><p class="font-semibold text-ink">Our office</p><p class="text-ink/60">2303 Cumberland Parkway SE, Suite 2<br/>Atlanta, GA 30339</p></div>
+              <div><p class="font-semibold text-ink">Our office</p><p class="text-ink/60">2303 Cumberland Parkway SE, Suite 2<br/>Atlanta, GA 30339</p><p class="text-brand-600 text-sm font-semibold mt-1">Serving Atlanta · Roswell · Snellville</p></div>
             </div>
             <div class="flex items-start gap-4">
               <span aria-hidden="true" class="w-11 h-11 rounded-xl bg-brand-600/10 text-brand-700 flex items-center justify-center shrink-0"><svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.95.68l1.5 4.5a1 1 0 01-.5 1.2l-2.26 1.13a11 11 0 005.5 5.5l1.13-2.26a1 1 0 011.2-.5l4.5 1.5a1 1 0 01.68.95V19a2 2 0 01-2 2h-1C9.7 21 3 14.3 3 6V5z"/></svg></span>
@@ -531,7 +546,7 @@
           <span aria-hidden="true" class="w-10 h-10 rounded-xl bg-gradient-to-br from-brand-600 to-cyan-400 flex items-center justify-center text-white"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M10 3h4a1 1 0 011 1v5h5a1 1 0 011 1v4a1 1 0 01-1 1h-5v5a1 1 0 01-1 1h-4a1 1 0 01-1-1v-5H4a1 1 0 01-1-1v-4a1 1 0 011-1h5V4a1 1 0 011-1z"/></svg></span>
           <span class="font-display font-extrabold text-white text-lg">BMI Surgical Institute</span>
         </div>
-        <p class="text-sm text-white/50 max-w-xs">Advanced bariatric, reflux and minimally invasive surgery for Atlanta — comprehensive care under one roof.</p>
+        <p class="text-sm text-white/50 max-w-xs">Advanced bariatric, reflux and minimally invasive surgery — serving Atlanta and the Roswell &amp; Snellville areas, all under one roof.</p>
       </div>
       <nav aria-label="Footer">
         <p class="font-semibold text-white mb-3">Explore</p>
