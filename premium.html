@@ -583,15 +583,23 @@
     ];
 
     /* ---------- SERVICES GRID ---------- */
+    // Procedures with a dedicated detail page link straight to it; the rest open the booking form.
+    const SERVICE_PAGES = {
+      'Gastric Sleeve':'gastric-sleeve.html','Gastric Bypass':'gastric-bypass.html',
+      'LINX for Reflux':'linx-reflux.html','Gastroparesis Care':'gastroparesis.html',
+      'Hernia Repair':'hernia-repair.html','Medical Weight Loss':'medical-weight-loss.html',
+    };
     const grid = document.getElementById('servicesGrid');
     const svcIcon = '<svg class="w-6 h-6" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 12h3.5l2 5 3.5-11 2.5 8 1.5-2H21"/></svg>';
     SERVICES.forEach(([name,desc])=>{
+      const page=SERVICE_PAGES[name];
       const a=document.createElement('a');
-      a.href='#book'; a.role='listitem';
+      a.href=page||'#book'; a.role='listitem';
       a.className='glass rounded-2xl p-5 group hover:-translate-y-1 transition block focus-visible:outline-none';
       a.innerHTML='<span aria-hidden="true" class="w-11 h-11 rounded-xl bg-brand-600/10 text-brand-700 flex items-center justify-center mb-3 group-hover:bg-brand-600 group-hover:text-white transition">'+svcIcon+'</span>'
         +'<h3 class="font-display font-bold text-ink text-[15px] leading-snug">'+name+'</h3>'
-        +'<p class="mt-1 text-xs text-ink/55">'+desc+'</p>';
+        +'<p class="mt-1 text-xs text-ink/55">'+desc+'</p>'
+        +(page?'<p class="mt-2 text-xs font-semibold text-brand-700 inline-flex items-center gap-1">Learn more<span aria-hidden="true">→</span></p>':'');
       grid.appendChild(a);
     });
 
