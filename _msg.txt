@@ -1,0 +1,15 @@
+Add real provider photos, fix doctor photo fit + warm header
+
+- Real headshots for Dr. Gonzalez-Jacobo and Christine Paulin (FNP),
+  sourced via bmisurgical.com WordPress media API, webp->jpg; Christine's
+  photo cropped to remove baked-in decorative blocks. Team pages now show
+  real photos for all three providers (monograms removed)
+- clean-modern + warm-friendly: Dr. Aryaie portrait now uses
+  object-[50%_18%] so the face stays framed in the tall hero/about cards
+- warm-friendly nav optimized onto a single line (smaller logo/links,
+  whitespace-nowrap, phone shown at xl)
+- Locations accuracy: "3 Atlanta offices/locations" -> "3 areas served";
+  reworded clean-modern contact copy to "serving the Roswell & Snellville
+  areas, too" (one physical office)
+
+Co-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>

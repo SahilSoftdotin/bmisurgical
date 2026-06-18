@@ -8,9 +8,9 @@ const callIcon = '<svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-
 const PROVIDERS = [
   { name:'Dr. Amir Aryaie', cred:'MD, FACS, FASMBS', role:'Founder & Owner · Bariatric Surgeon', photo:'images/dr-aryaie.jpg', founder:true,
     bio:'Dr. Aryaie founded BMI Surgical Institute and is a board-certified general surgeon who has performed thousands of weight-loss and minimally invasive GI procedures. He completed his bariatric & minimally invasive fellowship at University Hospitals / Case Western Reserve, and is a Fellow of the American College of Surgeons (FACS) and the American Society for Metabolic & Bariatric Surgery (FASMBS).' },
-  { name:'Dr. Gonzalez-Jacobo', cred:'MD', role:'Bariatric & General Surgeon', photo:null, founder:false,
+  { name:'Dr. Gonzalez-Jacobo', cred:'MD', role:'Bariatric & General Surgeon', photo:'images/dr-gonzalez-jacobo.jpg', founder:false,
     bio:'Dr. Gonzalez-Jacobo partners with Dr. Aryaie to deliver advanced bariatric and minimally invasive surgical care, bringing skill and compassion to every patient throughout their weight-loss journey.' },
-  { name:'Christine Paulin', cred:'FNP', role:'Family Nurse Practitioner', photo:null, founder:false,
+  { name:'Christine Paulin', cred:'FNP', role:'Family Nurse Practitioner', photo:'images/christine-paulin.jpg', founder:false,
     bio:'As a Family Nurse Practitioner, Christine supports patients before and after surgery — from medical evaluations and pre-op preparation to ongoing follow-up care that helps results last.' },
 ];
 
